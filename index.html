@@ -46,6 +46,22 @@
             padding-bottom: 8px;
             margin-top: 0;
         }
+        .tutorials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 15px;
+        }
+        .tutorial-card {
+            background: #fafafa;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid #1e4620;
+        }
+        .tutorial-card h3 {
+            margin-top: 0;
+            color: #1e4620;
+        }
         .image-container {
             text-align: center;
             margin: 20px 0;
@@ -89,6 +105,20 @@
             font-weight: bold;
             color: #b22222;
         }
+        .video-btn {
+            display: inline-block;
+            background-color: #ff0000;
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+        .video-btn:hover {
+            background-color: #cc0000;
+        }
         footer {
             text-align: center;
             padding: 20px;
@@ -120,13 +150,34 @@
             </ul>
         </section>
 
+        <!-- SEZIONE VIDEO TUTORIAL -->
+        <section id="tutorial">
+            <h2>Video Tutorial Esercizi</h2>
+            <p>Guarda i video per eseguire gli esercizi in modo corretto ed evitare infortuni:</p>
+            
+            <div class="tutorials-grid">
+                <!-- CARD LAT MACHINE -->
+                <div class="tutorial-card">
+                    <h3>Lat Machine Presa Larga</h3>
+                    <p>Sediti sotto i fermi per le gambe, chiudi le scapole prima di tirare e tieni i gomiti perpendicolari al corpo. Ricorda di espirare quando scendi e inspirare quando sali!</p>
+                    <a href="https://youtube.com" target="_blank" class="video-btn">▶ Video Lat Machine</a>
+                </div>
+
+                <!-- CARD ADDOMINALI -->
+                <div class="tutorial-card">
+                    <h3>Allenamento Addominali</h3>
+                    <p>Un circuito rapido composto da 4 esercizi mirati per allenare al top la zona addominale e rinforzare il core direttamente al campo.</p>
+                    <a href="https://youtube.com/shorts/lMarvx7q_08?si=fL6oTgYSSsHpiyuz" target="_blank" class="video-btn">▶ Video Addominali</a>
+                </div>
+            </div>
+        </section>
+
         <!-- SEZIONE IMMAGINE -->
         <section id="ispirazione">
             <h2>Pronti all'allenamento!</h2>
             <p>"Un bravo scout si mantiene in salute e si prende cura del proprio corpo per essere sempre pronto a servire gli altri."</p>
             <div class="image-container">
-                <!-- Immagine stabile caricata da Unsplash -->
-                <img src="palestra.jpg" alt="Allenamento Palestra">
+                <img src="https://unsplash.com" alt="Allenamento Palestra">
             </div>
         </section>
 
@@ -172,18 +223,3 @@
                         <tr><td>Herbin</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
                         <tr><td>Lem</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
                         <tr><td>Pietro Guida</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                        <tr><td>Giacomo</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                        <tr><td>Nico</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>Buona Caccia! Realizzato con orgoglio dalla Pattuglia GymBro</p>
-    </footer>
-
-</body>
-</html>
